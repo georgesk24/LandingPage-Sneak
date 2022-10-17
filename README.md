@@ -1,10 +1,3 @@
-# Landing Page - Prueba Frontend
-
-![Badge en Finalizado](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
-![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
-
-##Índice
-
 *[Título e imagen de portada](#Título-e-imagen-de-portada)
 
 *[Insignias](#insignias)
@@ -28,6 +21,11 @@
 * [Licencia](#licencia)
 
 *[Conclusión](#conclusión)
+
+# Landing Page - Prueba Frontend
+
+![Badge en Finalizado](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
 
 Como Ejecutar el proyecto...
 
