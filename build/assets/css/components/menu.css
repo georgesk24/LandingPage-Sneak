@@ -5,6 +5,7 @@
     align-items: center;
     margin: 1rem;
     position: absolute;
+    padding: 0;
 }
 
 .s-menu-options--center{
