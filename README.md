@@ -9,18 +9,18 @@ El proyecto esta desarrollado en HTML, Javascript (VanillaJS), css, Igualmente s
 ## Estructura de Carpetas del proyecto
 
 .
-├── app
-│   ├── pages
-│   ├──  ├── layout
-├── assets
-│   ├── css
-│   ├── fonts
-│   ├── img
-│   ├── js
-├── build 
-├── node_modules
-├── index.html
-├── files_configuration
+├── app <br>
+│   ├── pages <br>
+│   ├──  ├── layout <br>
+├── assets <br>
+│   ├── css <br>
+│   ├── fonts <br>
+│   ├── img <br>
+│   ├── js <br>
+├── build <br>
+├── node_modules <br>
+├── index.html <br>
+├── files_configuration <br>
 └── ...
 
 Se trabaja con la siguiente estructura; en la carpeta assets agregaremos todos los recursos que se utilizaran en la aplicación; como es el caso, de los archivos CSS, JS, imagenes, fuentes externas etc.
