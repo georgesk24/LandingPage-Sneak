@@ -1,6 +1,7 @@
 # Landing Page - Prueba Frontend
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+![Badge en Finalizado](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
 
 Como Ejecutar el proyecto...
 
