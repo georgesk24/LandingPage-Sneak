@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("./../../fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./../../fonts/Montserrat/static/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: Questrial;
+  src: url("./../../fonts/Questrial/Questrial-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+.h1 {
+  font-family: var(--font-family-montserrat-bold);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-40);
+}
+
+.h2 {
+  font-family: var(--font-family-montserrat-bold);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-25);
+  line-height: 1;
+}
+
+.h3-questrial {
+  font-family: var(--font-family-questrial);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-19);
+  line-height: 1;
+}
+
+.label {
+  font-family: var(--font-family-montserrat);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+}
+
+.label-small {
+  font-family: var(--font-family-montserrat);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-12);
+}
+
+.fz-16{
+  font-size: 1rem !important;
+}
+
+.fz-27{
+  font-size: 1.6875rem !important;
+}
+
+.fz-30{
+  font-size: 1.875rem;
+}
+
+.letter-spacing-30{
+  letter-spacing: 1.875rem;
+}
+
+.letter-spacing-20{
+  letter-spacing: 1.25rem;
+}
+
+.letter-spacing-10{
+  letter-spacing: 0.625rem;
+}
+
+.letter-spacing-5{
+  letter-spacing: 0.3125rem;
+}

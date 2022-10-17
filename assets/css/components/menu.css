@@ -1,0 +1,137 @@
+.s-menu-options{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+    position: absolute;
+}
+
+.s-menu-options--center{
+  justify-content: center;
+}
+
+.s-menu-options .s-menu-item, .s-menu-options a, .s-menu-options label{
+  cursor: pointer;
+} 
+
+.s-menu-options .s-menu-item{
+  list-style: none;
+  padding: 0.625rem 1.625rem;
+  color: var(--gray_1);
+  transition: all 0.5s ease;
+}
+
+.s-menu-options a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.s-menu-options .no-hover{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-menu-options .s-menu-item:not(.no-hover):hover{
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.s-menu-options .s-menu-item.active{
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+
+.nav__toggle {
+  /*position: absolute;*/
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+  
+.close{
+  z-index: 100;
+  position: relative;
+  color: var(--white);  
+}
+
+.close,
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1199.88px){
+
+  #nav__checkbox:checked ~ ul.s-menu-options .s-menu-item {
+    display: block;
+  }
+  #nav__checkbox:checked ~ label.nav__toggle .hamburger {
+    display: none;
+  }
+  #nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;    
+  }
+  
+  #nav__checkbox:checked ~ .s-menu-options-container{
+    transform: translateY(100%);
+  }  
+
+  #nav__checkbox:checked ~ .s-menu-options-container .s-menu-options .s-menu-item{
+    color: var(--white);
+    font-size: 1.875rem;
+  }
+
+  #nav__checkbox:checked ~ .s-menu-options-container .s-menu-options .s-menu-item label{
+    font-size: 2.1875rem;
+  }
+
+  #nav__checkbox:checked ~ .s-menu-options-container .s-menu-options .s-menu-item:not(.no-hover):hover{
+    background-color: var(--white);
+    color: var(--primary);
+  }
+
+  .s-menu-options-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;    
+    left: 0;
+    top: -100%;
+    background-color: var(--primary);
+    transition: all 0.3s linear;
+    z-index: 2;
+  }  
+}
+
+@media (min-width: 1200px) { 
+  
+  .nav__toggle {
+    display: none;
+  }
+  .s-menu-options {
+    flex-direction: row;
+    position: relative;
+  }
+  .s-menu-options .s-menu-item, .s-menu-options .s-menu-item .no-hover{
+    display: flex;
+  }
+
+}
+
+@media (min-width: 1400px) {  }
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+  

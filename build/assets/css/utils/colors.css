@@ -1,0 +1,15 @@
+.txt-gray-1{
+    color: var(--gray_1);
+}
+
+.txt-primary {
+    color: var(--primary);
+}
+
+.txt-light-blue-1{
+    color: var(--light_blue_1);
+}
+
+.txt-white{
+    color: var(--white);
+}

@@ -1,0 +1,114 @@
+.content-grid.grid {
+    grid-column-gap: 1.5rem;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    transition: all 0.3s linear;
+}
+
+.content-grid.grid .content-grid-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1.5rem;
+    transition: all 0.3s linear;
+}
+
+.content-grid.grid .content-grid-column-item {
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: var(--light_blue);
+    transition: all 0.3s linear;
+}
+
+.content-grid.grid .content-grid-column-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-grid.grid .content-grid-column-item .overlay {
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    top: 0.5rem;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 1rem;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container .overlay-content-info{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container .overlay-content-info .overlay-content-info-download{
+    display: none;
+}
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container .overlay-content-info .s-button:first-child{
+    display: block;
+}
+
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container .overlay-content-info div{
+    color: var(--white);
+    width: calc(100% - 2.375rem);
+    padding-right: 1rem;
+}
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container .overlay-content-info div .content-info-title{
+    font-family: var(--font-family-montserrat);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-16);
+}
+
+.content-grid.grid .content-grid-column-item .overlay .overlay-container .overlay-content-info div .content-info-subtitle{
+    font-family: var(--font-family-montserrat);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-12);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.content-grid.grid .content-grid-column-item:hover .overlay {
+    display: flex;
+    pointer-events: none;
+}
+
+.content-grid.grid .input-check:checked~.btn-like i {
+    color: var(--primary);
+}
+
+.content-grid.grid .btn-like {
+    transition: all 0.3s linear;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767.98px) {
+    .content-grid.grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .content-grid.grid .content-grid-column-item .overlay {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .content-grid.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

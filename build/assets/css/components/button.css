@@ -1,0 +1,47 @@
+.s-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-questrial);
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--white);
+    height: auto;
+    padding: 1rem;  
+    font-size: 0.875rem;  
+}
+
+.s-button.s-button--radius{
+    border-radius: 0.25rem;
+}
+
+.s-button.s-button--padding{
+    padding: 0.75rem 2rem;
+}
+
+.s-button.s-button--primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.s-button.s-button--white{
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.s-button.s-button--gray{
+    background-color: var(--white);
+    color: var(--gray_1);
+}
+
+.s-button.s-button--primary.s-button--icon{
+    color : var(--primary);
+    background-color: transparent;
+}
+
+.s-button:active {
+    transform: scale(0.98);
+}

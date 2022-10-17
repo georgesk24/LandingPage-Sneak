@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <title>Gulp Html Include Boilerplate</title>
+  </head>
+  <body>
+    
+    @@include('./app/pages/layout/header.html')
+
+    <section class="w-100 d-flex justify-content-center py-70" id="gallery">
+
+      <!-- IMGE VIEWER-->
+      <div class="modal-box invisible">
+        <div class="overlay"></div>
+        <div class="modal-box--image">
+            <img src="" alt="image here" />
+        </div>
+      </div>
+  
+      <div class="container">
+
+        <div class="d-flex justify-content-center align-items-center mb-70">
+          <label class="txt-primary fz-27 px-9 cursor-pointer" title="grid" onclick="showOrder('grid')">
+            <i class="fa-solid fa-grip-vertical"></i>
+          </label>
+          <label class="txt-primary fz-27 px-9 cursor-pointer" title="list" onclick="showOrder('list')">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+
+        <div class="w-100 mb-70">
+          <div class="s-menu-options-container">
+            <ul class="s-menu-options s-menu-options--center">
+              <li class="s-menu-item active">
+                  <a href="#">
+                      <label class="h3-questrial">All</label>
+                  </a>
+              </li>
+              <li class="s-menu-item">
+                  <a href="#" >
+                      <label class="h3-questrial">Branding</label>
+                  </a>
+              </li>
+              <li class="s-menu-item">
+                  <a href="#" >
+                      <label class="h3-questrial">Web</label>
+                  </a>
+              </li>
+              <li class="s-menu-item">
+                  <a href="#" >
+                      <label class="h3-questrial">Photography</label>
+                  </a>
+              </li>                
+              <li class="s-menu-item">
+                  <a href="#" >
+                      <label class="h3-questrial">App</label>
+                  </a>
+              </li>                                                
+            </ul>
+          </div>              
+        </div>
+
+        <div class="content-grid mb-40 grid" id="content-grid">
+
+          <div class="content-grid-column grid" id="columna-000021">
+        
+            <div *for="let item of galleryCol1" class="content-grid-column-item">
+              
+              <div class="content-img image-box">
+                <img src="{{item.img}}">                
+              </div>
+        
+              <div class="overlay">
+        
+                <div class="overlay-container">
+        
+                  <div class="d-flex justify-content-end">
+                    <input type="checkbox" class="input-check" id="check{{item.id}}">
+                    <label for="check{{item.id}}" class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100 btn-like" title="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </label>
+                  </div>
+        
+                  <div class="overlay-content-info">
+        
+                    <div class="d-flex">
+                      <label class="fz-30 mr-8">
+                        <i class="fa-solid fa-tag"></i>
+                      </label>
+                      <div>
+                        <h2 class="content-info-title">{{ item.title}}</h2>
+                        <p class="content-info-subtitle">{{ item.description }}</p>
+                      </div>
+                    </div>
+        
+                    <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download"
+                      onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+
+                    <button class="overlay-content-info-download s-button s-button--primary s-button--radius w-100 fz-16 max-w-170" title="Download"
+                      onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+                      Download
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>                          
+        
+                  </div>
+        
+                </div>
+        
+              </div>
+            </div>
+        
+          </div>
+        
+          <div class="content-grid-column grid" id="col-2">
+            <div *for="let item of galleryCol2" class="content-grid-column-item">
+              <div class="content-img image-box">
+                <img src="{{item.img}}">                
+              </div>
+        
+              <div class="overlay">
+        
+                <div class="overlay-container">
+        
+                  <div class="d-flex justify-content-end">
+                    <input type="checkbox" class="input-check" id="check{{item.id}}">
+                    <label for="check{{item.id}}" class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100 btn-like" title="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </label>
+                  </div>
+        
+                  <div class="overlay-content-info">
+        
+                    <div class="d-flex">
+                      <label class="fz-30 mr-8">
+                        <i class="fa-solid fa-tag"></i>
+                      </label>
+                      <div>
+                        <h2 class="content-info-title">{{ item.title}}</h2>
+                        <p class="content-info-subtitle">{{ item.description }}</p>
+                      </div>
+                    </div>
+        
+                    <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download"
+                      onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+
+                    <button class="overlay-content-info-download s-button s-button--primary s-button--radius w-100 fz-16 max-w-170" title="Download"
+                      onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+                      Download
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>                         
+        
+                  </div>
+        
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+          <div class="content-grid-column grid" id="col-3">
+            <div *for="let item of galleryCol3" class="content-grid-column-item">
+              <div class="content-img image-box">
+                <img src="{{item.img}}">                
+              </div>
+        
+              <div class="overlay">
+        
+                <div class="overlay-container">
+        
+                  <div class="d-flex justify-content-end">
+                    <input type="checkbox" class="input-check" id="check{{item.id}}">
+                    <label for="check{{item.id}}" class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100 btn-like" title="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </label>
+                  </div>
+        
+                  <div class="overlay-content-info">
+        
+                    <div class="d-flex">
+                      <label class="fz-30 mr-8">
+                        <i class="fa-solid fa-tag"></i>
+                      </label>
+                      <div>
+                        <h2 class="content-info-title">{{ item.title}}</h2>
+                        <p class="content-info-subtitle">{{ item.description }}</p>
+                      </div>
+                    </div>
+        
+                    <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download"
+                      onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+
+                    <button class="overlay-content-info-download s-button s-button--primary s-button--radius w-100 fz-16 max-w-170" title="Download"
+                      onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+                      Download
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>                
+        
+                  </div>
+        
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="w-100 d-flex justify-content-center">
+          <button class="s-button s-button--primary s-button.s-button--padding max-w-170 w-100">
+            Show Me More
+          </button>
+        </div>
+
+      </div>
+      
+    </div>
+
+    </section>
+
+    @@include('./app/pages/layout/footer.html')
+
+  </body>
+</html>

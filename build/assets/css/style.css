@@ -1,0 +1,144 @@
+@import "./views/header.css";
+@import "./views/footer.css";
+
+@import "./components/menu.css";
+@import "./components/button.css";
+@import "./components/card-grid.css";
+@import "./components/card-list.css";
+@import "./components/imge-viewer.css";
+@import "./components/input.css";
+
+@import "./utils/size.css";
+@import "./utils/spacing.css";
+@import "./utils/fonts.css";
+@import "./utils/colors.css";
+@import "./utils/grid.css";
+
+:root {
+  
+  --primary: #ff5672;
+  --white: #ffffff;
+  --black: #333333;
+  --gray_1: #707070;
+  --light_blue: #f2f3f5;
+  --light_blue_1: #c3d0d8;
+
+  --font-family-montserrat: "Montserrat";
+  --font-family-montserrat-bold: "Montserrat-Bold";
+  --font-family-questrial: "Questrial";
+
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-19: 1.1875rem;
+  --font-size-20: 1.25rem;  
+  --font-size-25: 1.5625rem;  
+  --font-size-40: 2.5rem;
+  --font-size-53: 3.3125rem;
+  
+  --line-height-40: 2.5rem;
+
+  --font-style-normal: normal;
+  
+  --font-weight-700: 700; 
+  --font-weight-400: 400; 
+
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+body {
+
+  margin: auto;
+  background-color: white; 
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p{
+  margin: 0;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.container{
+  max-width: 82.5rem;  
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media screen and (min-width: 0px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+#menu-header .s-menu-item .s-group:has(> input:focus){
+  opacity: 1;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+.s-group{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+  }      
+    
+.s-input {
+    flex: 1 0 auto;
+    line-height: 1.25rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 0;
+    border-color: var(--black);
+    padding: 1rem;
+}
+      
+.s-input:focus-within {
+    outline: transparent solid 0.125rem;
+}
+        
+  
+  .s-input[ctcType="outline"] {
+    box-shadow: inset 0 0 0.375rem #4f588958;
+    border-radius: 0.75rem;
+    color: var(--black);
+  }
+
+      
+  #menu-header:has(> .s-input:focus){
+    opacity: 1;
+    width: 100%;
+  }
+   
+

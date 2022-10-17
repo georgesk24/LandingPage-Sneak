@@ -1,0 +1,23 @@
+.w-100{
+    width: 100%;
+}
+
+.max-w-40{
+    max-width: 2.5rem;
+}
+
+.max-w-170{
+    max-width: 10.625rem;
+}
+
+.max-w-200{
+    max-width: 12.5rem;
+}
+
+.max-w-720{
+    max-width: 45rem;
+}
+
+.max-w-1440{
+    max-width: 90rem;
+}

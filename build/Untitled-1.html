@@ -1,0 +1,77 @@
+<div class="content-grid-column" id="col-2">
+    <div *for="let item of galleryCol2" class="content-grid-column-item">
+      <img src="{{item.img}}" >
+      
+      <div class="overlay">
+       
+        <div class="d-flex flex-column justify-content-between w-100">
+          
+          <div class="d-flex justify-content-end">
+            <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+          
+          <div class="d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex">
+              <label class="txt-white fz-30 mr-8">
+                <i class="fa-solid fa-tag"></i>
+              </label>
+              <div class="header-tab-info txt-white">
+                <h2 class="label">{{ item.title}}</h2>
+                <p class="label-small">{{ item.description }}</p>  
+              </div>     
+            </div>
+
+            <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download" onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>     
+  
+  <div class="content-grid-column" id="col-3">
+    <div *for="let item of galleryCol3" class="content-grid-column-item">
+      <img src="{{item.img}}" >
+      
+      <div class="overlay">
+       
+        <div class="d-flex flex-column justify-content-between w-100">
+          
+          <div class="d-flex justify-content-end">
+            <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+          
+          <div class="d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex">
+              <label class="txt-white fz-30 mr-8">
+                <i class="fa-solid fa-tag"></i>
+              </label>
+              <div class="header-tab-info txt-white">
+                <h2 class="label">{{ item.title}}</h2>
+                <p class="label-small">{{ item.description }}</p>  
+              </div>     
+            </div>
+
+            <button class="s-button s-button--gray s-button--radius p-8 max-w-40 w-100" title="Download" onclick="downloadImage('{{item.img}}', '{{item.title}}')">
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>   
+
+  onclick="downloadImage('{{item.img}}', '{{item.title}}')"
