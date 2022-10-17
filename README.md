@@ -3,14 +3,7 @@
 ![Badge en Finalizado](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 ![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
 
-Como Ejecutar el proyecto...
-
-Ingresar en la linea de comandos del editor (VSCODE), de antemano debe tener instalado Node JS
-
-1. npm install 
-2. Ejecutar comando gulp
-
-#Indice
+<h!>Indice</h1>
 
 *[Descripción del proyecto](#descripción-del-proyecto)
 
@@ -30,5 +23,11 @@ Ingresar en la linea de comandos del editor (VSCODE), de antemano debe tener ins
 
 *[Conclusión](#conclusión)
 
+Como Ejecutar el proyecto...
+
+Ingresar en la linea de comandos del editor (VSCODE), de antemano debe tener instalado Node JS
+
+1. npm install 
+2. Ejecutar comando gulp
 
 
