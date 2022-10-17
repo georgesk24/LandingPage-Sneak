@@ -38,6 +38,9 @@ La carpeta Build, es el resultado final de la compilación del proyecto, y es lo
 ## <b> npm install </b>
 3. Compilar y ejecutar el proyecto, con el comando 
 ## <b> gulp </b>
+4. En caso de que surjan complicaciones al ejecutar el proyecto por linea de comandos.
+## Puede entrar a la carpeta build y abrir el archivo index.html
+
 
 
 
