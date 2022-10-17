@@ -23,6 +23,8 @@
 
 *[Conclusión](#conclusión)
 
+:Descripción del proyecto: Proyecto en construcción :Descripción del proyecto:
+
 Como Ejecutar el proyecto...
 
 Ingresar en la linea de comandos del editor (VSCODE), de antemano debe tener instalado Node JS
