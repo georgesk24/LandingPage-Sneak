@@ -87,7 +87,6 @@
 
 .content-grid.grid .content-grid-column-item:hover .overlay {
     display: flex;
-    pointer-events: none;
 }
 
 .content-grid.grid .input-check:checked~.btn-like i {
